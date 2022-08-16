@@ -117,7 +117,7 @@ function M.setup()
 	hi.StatusLineNC = { bg = M.bg_very_subtle, fg = M.dark_grey }
 	hi.VertSplit    = { bg = M.bg_very_subtle, fg = M.bg_very_subtle }
 	hi.Title        = { fg = M.mint, gui = "bold" }
-	hi.Visual       = { fg = M.bg, bg = M.mint }
+	hi.Visual       = { fg = M.fg, bg = M.bg_subtle }
 	hi.VisualNOS    = "Visual"
 	hi.WarningMsg   = { fg = M.fg, bg = M.orange, gui = "bold" }
 	hi.WildMenu     = { fg = M.bg, bg = M.fg }
