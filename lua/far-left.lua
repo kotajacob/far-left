@@ -1,5 +1,7 @@
 local M = {
 	black         = "#000000",
+	darkest_grey  = "#2a2a2a",
+	darker_grey   = "#525252",
 	dark_grey     = "#767676",
 	grey          = "#AAAAAA",
 	light_grey    = "#CCCCCC",
@@ -12,12 +14,21 @@ local M = {
 	purple        = "#888aca",
 }
 
-M.bg             = M.white
-M.bg_subtle      = M.lighter_grey
-M.bg_very_subtle = M.lightest_grey
-M.fg             = M.black
-M.fg_subtle      = M.dark_grey
-M.fg_very_subtle = M.dark_grey
+if vim.o.background == "light" then
+	M.bg             = M.white
+	M.bg_subtle      = M.lighter_grey
+	M.bg_very_subtle = M.lightest_grey
+	M.fg             = M.black
+	M.fg_subtle      = M.dark_grey
+	M.fg_very_subtle = M.grey
+else
+	M.bg             = M.black
+	M.bg_subtle      = M.darker_grey
+	M.bg_very_subtle = M.darkest_grey
+	M.fg             = M.white
+	M.fg_subtle      = M.lighter_grey
+	M.fg_very_subtle = M.light_grey
+end
 
 -- This is a bit of syntactic sugar for creating highlight groups.
 --
