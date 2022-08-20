@@ -1,7 +1,9 @@
 # far-left
-A minimal lua colorscheme for neovim.
+A minimal lua colorscheme for neovim. Inspired by
+[left](http://100r.co/site/left.html).
 
 ## Screenshots
+Supports light and dark mode!
 ![screenshot 1](1.png)
 ![screenshot 2](2.png)
 
