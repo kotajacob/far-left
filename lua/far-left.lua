@@ -95,13 +95,13 @@ function M.setup()
 
 	hi.Operator = { fg = M.fg, gui = "bold" }
 
-	hi.PreProc   = { fg = M.fg_subtle, bg = M.bg }
+	hi.PreProc   = { fg = M.fg_subtle }
 	hi.Include   = "PreProc"
 	hi.Define    = "PreProc"
 	hi.Macro     = "PreProc"
 	hi.PreCondit = "PreProc"
 
-	hi.Type         = { fg = M.fg, bg = M.bg }
+	hi.Type         = { fg = M.fg }
 	hi.StorageClass = "Type"
 	hi.Structure    = "Type"
 	hi.Typedef      = "Type"
@@ -113,10 +113,10 @@ function M.setup()
 	hi.SpecialComment = { fg = M.fg_subtle, gui = "italic,bold" }
 	hi.Debug          = "Special"
 
-	hi.Underlined   = { fg = M.fg, bg = M.bg, gui = "underline" }
+	hi.Underlined   = { fg = M.fg, gui = "underline" }
 	hi.Ignore       = { fg = M.bg, bg = M.bg, }
 	hi.Error        = { fg = M.bg, bg = M.red }
-	hi.Todo         = { fg = M.mint, bg = M.bg, gui = "bold,underline" }
+	hi.Todo         = { fg = M.mint, gui = "bold,underline" }
 	hi.SpecialKey   = { fg = M.mint }
 	hi.NonText      = { fg = M.dark_grey }
 	hi.Directory    = { fg = M.mint }
