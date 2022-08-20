@@ -28,6 +28,10 @@ else
 	M.fg             = M.white
 	M.fg_subtle      = M.lighter_grey
 	M.fg_very_subtle = M.light_grey
+	M.red            = "#ed834a"
+	M.mint           = "#58a69b"
+	M.orange         = "#f7ca88"
+	M.purple         = "#888aca"
 end
 
 -- This is a bit of syntactic sugar for creating highlight groups.
@@ -156,7 +160,7 @@ function M.setup()
 	hi.CursorLine   = { bg = M.bg_very_subtle }
 	hi.ColorColumn  = { bg = M.bg_subtle }
 
-	hi.MatchParen = { bg = M.mint, fg = M.bg }
+	hi.MatchParen = { fg = M.mint, bg = "", gui = "bold" }
 
 	-- git-gutter
 	hi.GitGutterAdd = { fg = M.mint }
