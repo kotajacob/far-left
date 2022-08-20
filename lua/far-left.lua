@@ -72,6 +72,9 @@ function M.setup()
 	hi.Cursor  = { bg = M.mint, fg = M.bg }
 	hi.lCursor = "Cursor"
 	hi.Comment = { fg = M.fg_subtle, gui = "italic" }
+	hi.TSNote  = "Comment"
+	hi.TSWarning  = { fg = M.orange, gui = "bold" }
+	hi.TSDanger  = { fg = M.fg, bg = M.red, gui = "bold" }
 
 	hi.Constant       = { fg = M.mint, gui = "bold" }
 	hi.Character      = "Constant"
@@ -134,7 +137,7 @@ function M.setup()
 	hi.Title        = { fg = M.mint, gui = "bold" }
 	hi.Visual       = { fg = M.fg, bg = M.bg_subtle }
 	hi.VisualNOS    = "Visual"
-	hi.WarningMsg   = { fg = M.fg, bg = M.orange, gui = "bold" }
+	hi.WarningMsg   = { fg = M.orange, gui = "bold" }
 	hi.WildMenu     = { fg = M.bg, bg = M.fg }
 	hi.Folded       = { fg = M.dark_grey }
 	hi.FoldColumn   = { fg = M.bg_subtle }
