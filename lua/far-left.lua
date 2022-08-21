@@ -126,7 +126,7 @@ function M.setup()
 	hi.ErrorMsg     = { fg = M.bg, bg=M.red }
 	hi.IncSearch    = { bg = M.purple, fg = M.bg, gui="NONE" }
 	hi.Search       = { bg = M.mint, fg = M.bg }
-	hi.MoreMsg      = { fg = M.dark_grey, bg = M.bg, gui = "bold" }
+	hi.MoreMsg      = { fg = M.dark_grey, gui = "bold" }
 	hi.ModeMsg      = "MoreMsg"
 	hi.LineNr       = { fg = M.fg_very_subtle, bg = M.bg }
 	hi.CursorLineNr = { fg = M.mint, bg = M.bg_very_subtle, gui = "bold" }
@@ -175,6 +175,16 @@ function M.setup()
 	hi.DiagnosticError = { fg = M.red }
 	hi.DiagnosticWarn = { fg = M.orange }
 	hi.DiagnosticInfo = { fg = M.mint }
+
+	-- wiki
+	hi.wikiHeader1 = { fg = M.mint, gui = "bold" }
+	hi.wikiHeader2 = { fg = M.orange, gui = "bold" }
+	hi.wikiHeader3 = { fg = M.purple, gui = "bold" }
+	hi.wikiCode = { fg = M.orange, gui = "bold" }
+	hi.wikiLinkDate = { fg = M.mint }
+	hi.wikiLinkUrl = { fg = M.mint, gui = "underline" }
+	hi.wikiLinkMdImg = { fg = M.mint, gui = "underline" }
+	hi.wikiQuote = { fg = M.fg_subtle, gui = "italic" }
 end
 
 function M.lualine()
